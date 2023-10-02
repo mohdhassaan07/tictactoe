@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Poppins&family=Roboto:ital,wght@1,700&display=swap');
+body
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(55,80,94);
+    
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 45rem;
+    color: white;
+}
+h1
+{
+    color: rgb(248, 196, 99);
+    font-size: 50px;
+    font-family: 'Finger Paint', cursive;
+}
+#game
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: 20px 10px 10px 10px;
+    font-family: 'Finger Paint', cursive;
+}
+.box
+{
+    width: 130px;
+    height: 130px;
+    border: solid 1px white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+.box:hover{
+    background-color: rgb(96, 126, 143);
+}
+button{
+    background-color: rgb(248, 196, 99);
+    padding: 0px;
+    border: none;
+    width: 6rem;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    height: 3rem;
+    font-weight: bold;
+    margin: 10px 15px;
+    transition: 0.1s transform;
+    
+}
+.boxtext
+{
+    transition: transform 0.2s;
+}
+button:hover
+{
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+.bt
+{
+    border-top: 0px;
+}
+.bb
+{
+    border-bottom: 0;
+}
+.br
+{
+    border-right: 0;
+}
+.bl
+{
+    border-left: 0;
+}
+.result
+{
+    display: flex;
+}
+.player
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width:420px) {
+    #game
+    {
+        width: 400px;
+        margin: 20px 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+    }
+    h1
+    {
+        font-size: 40px;
+    }
+    
+}
